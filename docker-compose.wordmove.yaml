@@ -12,3 +12,5 @@ services:
         source: ../
         target: /var/www/html
       - ~/.ssh:/tmp/.ssh:ro
+    environment:
+      WP_CLI_ALLOW_ROOT: 1
