@@ -1,0 +1,14 @@
+#ddev-generated
+
+services:
+  wordmove:
+    image: drdogbot7/wordmove
+    container_name: "ddev-${DDEV_SITENAME}-wordmove"
+    networks: ["default", "ddev_default"]
+    working_dir: "/var/www/html/"
+    tty: true
+    volumes:
+      - type: bind
+        source: ../
+        target: /var/www/html
+      - ~/.ssh:/tmp/.ssh:ro

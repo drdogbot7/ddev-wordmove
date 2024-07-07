@@ -1,0 +1,8 @@
+#!/bin/bash
+#ddev-generated
+## Description: Run wordmove commands inside wordmove container
+## Usage: wordmove [flags] [args]
+## Example: "ddev wordmove doctor" or "ddev wordmove push -d -e production"
+## ProjectTypes: wordpress
+
+wordmove "$@"
